@@ -32,3 +32,40 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+
+## Install Firebase CLI
+To host your site with Firebase Hosting, you need the Firebase CLI (a command line tool).
+
+Run the following [npm](https://www.npmjs.com/) command to install the CLI or update to the latest CLI version.
+
+```bash
+npm install -g firebase-tools
+```
+
+Doesn't work? Take a look at the [Firebase CLI reference](https://firebase.google.com/docs/cli/?authuser=0&hl=en) or change your [npm permissions](https://docs.npmjs.com/getting-started/fixing-npm-permissions)
+
+## Deploy on Firebase
+
+You can deploy now or [later](https://firebase.google.com/docs/hosting/quickstart?authuser=0&hl=en). To deploy now, open a terminal window, then navigate to or create a root directory for your web app.
+
+### Sign in to Google
+```bash
+firebase login
+```
+
+### Initiate your project
+Run this command from your app’s root directory:
+```bash
+firebase init
+```
+
+### When you’re ready, deploy your web app
+Put your static files (e.g., HTML, CSS, JS) in your app’s deploy directory (the default is “public”). Then, run this command from your app’s root directory:
+```bash
+firebase deploy
+```
+
+After deploying, view your app at [testowy-edc26.web.app](https://testowy-edc26.web.app/)
+
+Need help? Check out the [Hosting docs](https://firebase.google.com/docs/hosting/quickstart?authuser=0&hl=en)
